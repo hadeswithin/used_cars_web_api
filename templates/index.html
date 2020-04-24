@@ -13,7 +13,7 @@
     <body>
             <h1>Price Prediction</h1>
             <form action="{{url_for('predict')}}" method="POST">
-                Model Year: <input name="year" type="text"> <br>
+                Model Year:<br><input name="year" type="text"> <br>
                 Manufacturer:<br><select name="manufacturer">
                     <option value="ford">Ford</option>
                     <option value="chevrolet">Chevrolet</option>
@@ -141,6 +141,98 @@
                 <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
             </form>
             {{ prediction_text }}
+                <table align="center">
+                    <tr>
+                        <td>
+                            Model Year:
+                        </td>
+                        <td>
+                            <input name="year" type="text">
+                        </td>
+                        <td>
+                            Manufacturer:
+                        </td>
+                        <td>
+                            <select name="manufacturer">
+                                <option value="ford">Ford</option>
+                                <option value="chevrolet">Chevrolet</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="nissan">Nissan</option>
+                                <option value="ram">RAM</option>
+                                <option value="honda">Honda</option>
+                                <option value="jeep">Jeep</option>
+                                <option value="gmc">GMC</option>
+                                <option value="dodge">Dodge</option>
+                                <option value="bmw">BMW</option>
+                                <option value="hyundai">Hyundai</option>
+                                <option value="mercedes-benz">Mercedes-Benz</option>
+                                <option value="subaru">Subaru</option>
+                                <option value="volkswagen">Volkswagen</option>
+                                <option value="kia">Kia</option>
+                                <option value="chrysler">Chrysler</option>
+                                <option value="cadillac">Cadillac</option>
+                                <option value="lexus">Lexus</option>
+                                <option value="buick">Buick</option>
+                                <option value="mazda">Mazda</option>
+                                <option value="audi">Audi</option>
+                                <option value="acura">Acura</option>
+                                <option value="infiniti">Infiniti</option>
+                                <option value="lincoln">Lincoln</option>
+                                <option value="pontiac">Pontiac</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="mitsubishi">Mitsubishi</option>
+                                <option value="mini">Mini</option>
+                                <option value="rover">Rover</option>
+                                <option value="mercury">Mercury</option>
+                                <option value="saturn">Saturn</option>
+                                <option value="jaguar">Jaguar</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="harley-davidson">Harley-Davidson</option>
+                                <option value="alfa-romeo">Alph-Romeo</option>
+                                <option value="datsun">Datsun</option>
+                                <option value="tesla">Tesla</option>
+                                <option value="land rover">Land Rover</option>
+                                <option value="porche">Porche</option>
+                                <option value="aston-martin">Aston-Martin</option>
+                                <option value="ferrari">Ferrari</option>
+                                <option value="morgan">Morgan</option>
+                                <option value="unknown">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Condition:
+                        </td>
+                        <td>
+                            <select name="condition">
+                                <option value="new">New</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="like new">Like New</option>
+                                <option value="good">Good</option>
+                                <option value="salvage">Salvage</option>
+                                <option value="fair">Fair</option>
+                            </select>
+                        </td>
+                        <td>
+                            Cylinders:
+                        </td>
+                        <td>
+                            <select name="cylinders">
+                                <option value="0">3 cylinders</option>
+                                <option value="1">4 cylinders</option>
+                                <option value="2">5 cylinders</option>
+                                <option value="3">6 cylinders</option>
+                                <option value="4">8 cylinders</option>
+                                <option value="5">10 cylinders</option>
+                                <option value="6">12 cylinders</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                </table>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
         
     </body>
 </html>
